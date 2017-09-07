@@ -1,0 +1,25 @@
+
+body {
+    background: #ccc;
+    width: 370px;
+    box-sizing: border-box;
+}
+
+div {
+    font-size: 36px;
+    color: #005566;
+    background: #0e91a1;
+    border: 5px solid;
+    border-color: #7dce94;
+    margin: 15px;
+    width: 360px;
+    height: 140px;
+}
+
+p {
+    vertical-align: top;
+    text-align: left;
+    margin: 10px;
+    margin-top: 15px;
+    font-family: Arial;
+}
