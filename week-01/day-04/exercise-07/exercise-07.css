@@ -1,0 +1,23 @@
+* {
+    width: 260px;
+    font-weight: bold;
+}
+
+p {
+    color: blue;
+    background: yellow;
+}
+
+/* {
+    font-weight: normal;
+    color: blue;
+}*/
+
+#b325 {
+    border: 2px solid green;
+}
+
+"class=asteroid b326" {
+    border: 2px solid green;
+    
+}
