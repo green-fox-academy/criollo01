@@ -1,3 +1,29 @@
 body {
-    width: 600px;
+    width: 500px;
+    border: 1px solid black;
+    padding: 0px 10px 5px 10px;
+}
+
+h1 {
+    color: #FF6347;
+    margin: 0;
+}
+
+h2 {
+    color: #9142E4;
+    margin-top: 10px;
+}
+
+ul {
+    line-height: 1.3em;
+}
+
+ol {
+    text-decoration: underline;
+    color: #ff66cc;
+}
+
+li:last-child {
+    color: black;
+    text-decoration-color: black;
 }
