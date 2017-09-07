@@ -1,0 +1,42 @@
+body {
+    width: 380px;
+    height: 540px;
+    background: white;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    font-family: Arial;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.boxes {
+    border: 15px solid;
+    border-color: #6d49fa;
+}
+
+#first {
+    background: #ec6a70;
+    padding: 45px;
+}
+
+#second {
+    background: #E1ff4b;
+    padding: 45px;
+    
+}
+
+#third {
+    background: #A2E8E7;
+    padding: 45px;
+    
+}
+
+#fourth {
+    background: #896fe8;
+    padding: 45px;
+    
+}
