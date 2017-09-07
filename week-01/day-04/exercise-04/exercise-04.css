@@ -3,3 +3,8 @@ h1 {
     color: #f2a320;
     font-size: 36px;
 }
+
+p {
+    font-family: courier;
+    font-size: 16px;
+}
