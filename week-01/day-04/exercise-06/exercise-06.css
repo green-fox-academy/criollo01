@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
+    margin: 5px 0px;
 }
 
 body {
-    width: 410px;
+    width: 470px;
     font-family: sans-serif;
     margin: 5px;
 }
