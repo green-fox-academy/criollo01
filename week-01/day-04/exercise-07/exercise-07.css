@@ -8,16 +8,12 @@ p {
     background: yellow;
 }
 
-/* {
+/*
+{
     font-weight: normal;
     color: blue;
-}*/
+}                     */
 
 #b325 {
     border: 2px solid green;
-}
-
-"class=asteroid b326" {
-    border: 2px solid green;
-    
 }
