@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
     <form>
@@ -100,7 +100,7 @@
                 <h2>Telefonszám</h2>
                 <input type="tel" id="tel"/>
                 <h2>Megjegyzés</h2>
-                <textarea></textarea>                
+                <textarea rows=7 cols=33></textarea>                
                 <h2>Facebook url</h2>
                 <input type="text" id="facebook"/>
             </div>
@@ -108,19 +108,20 @@
             <!-- új box alulra-->    
             <div class="bottom">
                 <h2>Bemutatkozás</h2>
-                <textarea></textarea>
+                <textarea rows=6 cols=74></textarea>
 
                 <h2>CV feltöltése</h2>
-                <input type="submit" id="submit"/>
+                <input type="submit" id="submit" value="File kiválasztása"/>
+                
                 <br>
                 <input type="checkbox" id="accept"/>
                 <label for="accept">Elfogadom a felhasználási feltételeket</label>
                 
-                <article class="save">
+                <article class="save" id="save"/>
                     <input type="submit" value="Mentés"/>
                 </article>
                 
-                <article class="delete">
+                <article class="delete" id="delete"/>
                     <input type="submit" value="Űrlap törlése"/>
                 </article>
 

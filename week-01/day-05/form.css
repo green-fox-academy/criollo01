@@ -5,6 +5,7 @@
 
 body {
     box-sizing: border-box;
+    padding: 10px;
 }
 
 p {
@@ -12,31 +13,55 @@ p {
     font-size: 15px;
 }
 
+h1 {
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 40px;
+    padding: 10px 50px 10px 70px;
+    border: solid black 1px;
+}
+
 h2{
-    font-size: 15px;
+    font-size: 17px;
+    font-family: Raleway;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 25px;
+    font-family: Raleway;
+    font-weight: 300;
+    padding: 15px 15px;
+    /*padding-bottom: 30px;*/
+    text-align: center;
+    border: black 1px solid;
 }
 
 h4 {
-    margin-top: 10px;
+    margin-top: 5px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 15px;
+    font-family: Raleway;
+    font-weight: 300;
+    padding-left: 25px;
 }
 
 .mainbox {
-    background: black;
+    background:  #99ff99;
     width: 625px;
-    height: 790px;
+    height: 830px;
     margin: auto;
     display: inline-block;
+    padding: 0px 30px 30px 30px;
 }
 
 header {
     display: block;
-    background: grey;
+    background:  #99ff99
+    ;
     width: 100%;
     height: 45px;
     font-size: 10px;
@@ -48,40 +73,44 @@ header {
 .innerleft{
     width: 285px;
     display: inline-block;
-    height: 435px;
-    background: grey;
+    height: 415px;
+    background:  #b3ffb3;
     padding: 12px;
     float: left;
     margin: 0;
     margin-bottom: 0;
-    
+    padding-left: 10px;
+    border-bottom: dashed 1px;
 }
 
 .innerright {
     width: 285px;
     display: inline-block;
-    height: 435px;
-    background: grey;    
+    height: 415px;
+    background:  #b3ffb3;    
     display: inline-block;
     padding: 12px;
     margin-left: 7px;   
     margin-bottom: 0; 
+    border-bottom: dashed 1px;
+    
 }
 
 .bottom {
-    background: grey;
+    background:  #b3ffb3;
     width: 100%;
-    height: 180px;
+    height: 280px;
     margin: auto;
     margin-top: 15px;
+    display: block;
 }
 
 .birth {
     display: inline-block;
     width: 137px;
     height: 45px;
-    border: white 3px solid;
-    margin: 145px 0px 30px;
+    /*border: white 3px solid;*/
+    margin: 40px 0px 30px;
     margin-bottom: 0;
 }
 
@@ -89,8 +118,8 @@ header {
     display: inline-block;
     width: 136px;
     height: 45px;
-    border: white 3px solid;
-    margin: 145px 0px 30px;
+    /*border: white 3px solid;*/
+    margin: 40px 0px 30px;
     float: right;
     padding: 0;
     margin-bottom: 0;
@@ -101,9 +130,10 @@ header {
     display: block;
     width:  100%;
     height: 150px;
-    border: white 3px solid;
+   /* border: white 3px solid;*/
     padding: 0;
     margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .leftchoice {
@@ -113,3 +143,64 @@ header {
 .rightchoice {
     display: inline-block;
 }
+
+[type="text"] {
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+[type="number"] {
+    width: 60px;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+.leftchoice {
+    padding-left: 30px;
+    line-height: 1.5em;
+}
+
+.rightchoice {
+    padding-left: 30px;
+    line-height: 1.5em;
+}
+
+#email {
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+#tel {
+    margin-left: 10px;
+    border-radius: 2px;
+    
+}
+
+textarea {
+    margin-left: 10px;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    border-radius: 2px;
+    
+}
+
+#facebook {
+    margin-left: 10px;
+    border-radius: 2px;
+    
+}
+
+#submit {
+    margin-left: 10px;
+    width: 140px;
+    height: 30px;
+}
+
+#accept {
+    margin: 10px;
+    font-family: Raleway;
+    font-size: 14px;
+}
+
