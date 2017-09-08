@@ -12,8 +12,22 @@ p {
     font-size: 15px;
 }
 
+h2{
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
 .mainbox {
-    background: green;
+    background: black;
     width: 625px;
     height: 790px;
     margin: auto;
@@ -22,7 +36,7 @@ p {
 
 header {
     display: block;
-    background: yellow;
+    background: grey;
     width: 100%;
     height: 45px;
     font-size: 10px;
@@ -35,7 +49,7 @@ header {
     width: 285px;
     display: inline-block;
     height: 435px;
-    background: yellow;
+    background: grey;
     padding: 12px;
     float: left;
     margin: 0;
@@ -47,7 +61,7 @@ header {
     width: 285px;
     display: inline-block;
     height: 435px;
-    background: yellow;    
+    background: grey;    
     display: inline-block;
     padding: 12px;
     margin-left: 7px;   
@@ -55,7 +69,7 @@ header {
 }
 
 .bottom {
-    background: yellow;
+    background: grey;
     width: 100%;
     height: 180px;
     margin: auto;
@@ -66,8 +80,8 @@ header {
     display: inline-block;
     width: 137px;
     height: 45px;
-    border: black 3px solid;
-    margin: 155px 0px 30px;
+    border: white 3px solid;
+    margin: 145px 0px 30px;
     margin-bottom: 0;
 }
 
@@ -75,8 +89,8 @@ header {
     display: inline-block;
     width: 136px;
     height: 45px;
-    border: black 3px solid;
-    margin: 155px 0px 30px;
+    border: white 3px solid;
+    margin: 145px 0px 30px;
     float: right;
     padding: 0;
     margin-bottom: 0;
@@ -87,7 +101,15 @@ header {
     display: block;
     width:  100%;
     height: 150px;
-    border: black 3px solid;
+    border: white 3px solid;
     padding: 0;
     margin-top: 20px;
+}
+
+.leftchoice {
+    display: inline-block;
+}
+
+.rightchoice {
+    display: inline-block;
 }

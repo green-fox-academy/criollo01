@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Slabo+27px" rel="stylesheet">
 </head>
 <body>
     <form>
@@ -20,34 +21,108 @@
             <!-- új box balra -->
             <div class="innerleft">
                 <article class="name">
-                    <!--<p>Személyes adatok</p>
-                    <p>Név</p>
-                    <input type="text" name="name" /> -->
+                    
+                    <h3>Személyes adatok</h3>
+                    <h2>Név</h2>
+                    <input type="text" name="name" />
+                
                 </article>    
                 
                 <article class="birth">
+
+                    <h2>Születési év</h2>
+                    <input type="number" name="birthyear"/>
                 
                 </article>
-                
+
                 <article class="gender">
+  
+                    <h2>Nem</h2>
+                    <input type="radio" name="selector" class="woman"/>
+                    <label for="woman">Nő</label>
+                    <input type="radio" name="selector" class="man"/>
+                    <label for="man">Férfi</label>
 
                 </article>
 
                 <article class="multiplechoice">
 
+                    <h2>Milyen márkákat szeretsz?</h2>
+
+                    <div class="leftchoice">
+                            
+                    <input type="checkbox" id="adidas"/>
+                    <label for="adidas">Adidas</label>
+                    <br>
+                    <input type="checkbox" id="nike"/>
+                    <label for="nike">Nike</label>
+                    <br>
+                    <input type="checkbox" id="puma"/>
+                    <label for="puma">Puma</label>
+                    <br>
+                    <input type="checkbox" id="tisza"/>
+                    <label for="tisza">Tisza</label>
+                    <br>
+                    <input type="checkbox" id="opel"/>
+                    <label for="opel">Opel</label>
+                    
+                </div>
+                    
+                <div class="rightchoice">
+
+                    <input type="checkbox" id="kia"/>
+                    <label for="kia">Kia</label>
+                    <br>
+                    <input type="checkbox" id="kia"/>
+                    <label for="kia">Kia</label>
+                    <br>
+                    <input type="checkbox" id="kia"/>
+                    <label for="kia">Kia</label>
+                    <br>
+                    <input type="checkbox" id="kia"/>
+                    <label for="kia">Kia</label>
+                    <br>
+                    <input type="checkbox" id="kia"/>
+                    <label for="kia">Kia</label>
+                    
+                </div>
+                <h4>Többet is választhatsz!</h4>
                 </article>
         </div>
 
 
             <!-- új box jobbra -->
             <div class="innerright">
-                    
+                <h3>Kapcsolat</h3>
+
+                <h2>E-mail cím</h2>
+                <input type="email" id="email"/>
+                <h2>Telefonszám</h2>
+                <input type="tel" id="tel"/>
+                <h2>Megjegyzés</h2>
+                <textarea></textarea>                
+                <h2>Facebook url</h2>
+                <input type="text" id="facebook"/>
             </div>
 
             <!-- új box alulra-->    
             <div class="bottom">
+                <h2>Bemutatkozás</h2>
+                <textarea></textarea>
 
-            </div>
+                <h2>CV feltöltése</h2>
+                <input type="submit" id="submit"/>
+                <br>
+                <input type="checkbox" id="accept"/>
+                <label for="accept">Elfogadom a felhasználási feltételeket</label>
+                
+                <article class="save">
+                    <input type="submit" value="Mentés"/>
+                </article>
+                
+                <article class="delete">
+                    <input type="submit" value="Űrlap törlése"/>
+                </article>
 
         </div>
     </form>
