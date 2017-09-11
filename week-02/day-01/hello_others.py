@@ -4,3 +4,7 @@
 # Hello, Esther!
 # Hello, Mary!
 # Hello, Joe!
+
+print ("Hello, Tamara!")
+print ("Hello, Kamo!")
+print ("Hello, Istvan!")
