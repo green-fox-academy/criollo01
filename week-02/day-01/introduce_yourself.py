@@ -8,3 +8,7 @@
 #  John Doe
 #  31
 #  1.87
+
+print ("Luca Nagy")
+print (24)
+print (1.64)
