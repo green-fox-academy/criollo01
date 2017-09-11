@@ -12,3 +12,9 @@
 #
 # It should print: Sausage party
 # If no girls are coming, regardless the count of the people
+
+girls = int(input("Write a number! "))
+boys = int(input("Write another! "))
+
+if girls == boys & (girls + boys) > 20 :
+    print("The party is excellent!")
