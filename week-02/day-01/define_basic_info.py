@@ -8,3 +8,8 @@ name = str("Luca")
 age = int(24)
 height = 1.64
 married = False
+
+print name
+print age
+print height
+print married
