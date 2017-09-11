@@ -3,3 +3,14 @@
 # If the number is one it should print: One
 # If the number is two it should print: Two
 # If the number is more than two it should print: A lot
+
+number = int(raw_input("Write a number: "))
+if number <= 0:
+    print ("Not enough!")
+if number == 1:
+    print ("One")
+if number == 2:
+    print ("Two")
+if number > 2:
+    print ("A lot")
+    
