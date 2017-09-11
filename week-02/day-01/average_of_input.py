@@ -9,4 +9,4 @@ c = int(raw_input("And one more! "))
 d = int(raw_input("And one more! "))
 e = int(raw_input("And one more! "))
 
-print "Sum:", (a+b+c+d+e), ", Average:", (a+b+c+d+e) / 5
+print("Sum:", (a+b+c+d+e), ", Average:", ((a+b+c+d+e) / 5))
