@@ -3,3 +3,10 @@
 #   and appends an 'a' character to its end
 # - Print the result of `appendA(am)`
 
+am = 'kuty'
+
+def append_a():
+   append = 'a'
+   print(am + append)
+
+append_a()
