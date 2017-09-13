@@ -17,7 +17,9 @@ hashmap = {
     3: "say goodbye"
 }
 
-out = "";
-
+out = ""
+ 
+#  .join(str(value) for value in hashmap.items());
+# # result = "".join(str(key) + str(value) for key, value in dictionary.items())
 
 print(out)
