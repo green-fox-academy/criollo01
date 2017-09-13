@@ -14,3 +14,8 @@ accounts = [
 #
 # Print "404 - account not found" if any of the account numbers don't exist
 
+def name_balance():
+    for i in range(len(accounts)):
+        print(accounts[i]['client_name'] + ": " + str(accounts[i]['balance']))
+
+name_balance()
