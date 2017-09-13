@@ -15,3 +15,30 @@
 # Waits for the user input
 # Print the result
 # Exit
+
+def calculator(operator, op_1, op_2):
+    if operator == '+':
+        result = op_1, op_2
+    elif operator == '-':
+        result = op_1, op_2
+    elif operator == '*':
+        result = op_1 * op_2
+    elif operator == '/':
+        if op_2 != 0:
+            result = op_1 / op_2
+        else:
+            result = "No division by 0"
+    elif operator == '%':
+        if op_2 != 0:
+            result = op_1 % op_2
+        else:
+            result = "No division by 0"
+    print('The result is: ' + result)
+
+inp_1 = input('Please type in what kind of operation you want to do (e.g. + - * / %): ')
+inp_2 = input('What is the first number? ')
+inp_3 = input('What is the second number? ')
+
+calculator(inp_1, inp_2, inp_3)
+
+# not working yet, because it doesn't add numbers together, but places them next to each other
