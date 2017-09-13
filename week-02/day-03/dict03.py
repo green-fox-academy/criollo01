@@ -19,3 +19,25 @@ def name_balance():
         print(accounts[i]['client_name'] + ": " + str(accounts[i]['balance']))
 
 name_balance()
+
+
+# transfer
+
+
+def transfer(from_acc, to_acc, amount):
+	change_balance(from_acc, -amount)
+	change_balance(to_acc, amount)
+
+def change_balance(account_number, amount):
+	temp_index = get_index_by_id(account_number)
+	if accounts[temp_index]["balance"] + amount > 0:
+		accounts[temp_index]["balance"] += amount
+	else:
+		print("403 - forbidden")
+		
+
+def get_index_by_id(account_number):
+	for account in accounts:
+		if account["account_number"] == account_number:
+			return accounts.index(account)
+	print("404 - account not found")
