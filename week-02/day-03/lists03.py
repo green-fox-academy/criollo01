@@ -5,3 +5,11 @@
 
 verbs = ["megy", "ver", "kapcsol", "rak", "néz"]
 preverb = "be"
+
+def create_new_verbs():
+    for i in range(len(verbs)):
+        preverb.append(verbs)
+    return new_verbs
+
+create_new_verbs()
+print(new_verbs)
