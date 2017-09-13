@@ -9,6 +9,6 @@
 #  - Download games
 #      - Diablo
 
-# todoText = " - Buy milk\n", " - Download games\n" "   - Diablo\n"
+# todoText = " - Buy milk\n"
 todo_text = [[" - Buy milk\n" ] [" - Download games\n" ]]
 print(todo_text)
