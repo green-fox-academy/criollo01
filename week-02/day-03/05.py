@@ -9,6 +9,6 @@
 #  - Download games
 #      - Diablo
 
-# todoText = " - Buy milk\n"
-todo_text = [[" - Buy milk\n" ] [" - Download games\n" ]]
-print(todo_text)
+todoText = " - Buy milk\n"
+
+print("My todo:\n" + todoText + " - Download games\n" + "     - Diablo")
