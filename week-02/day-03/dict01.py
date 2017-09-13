@@ -20,10 +20,19 @@ def student_candy_ate():
                 print(students[i]['name'] + " : " + str(students[i]['candies']) )
 student_candy_ate()
 
-def sum():
+def sum_of_candies(students):
+        candy_counter = 0
+        for student in students:
+                candy_counter += student["candies"]
+        return candy_counter
+
+print(sum_of_candies(students))
+
+def sum_of_people_who_have_less():
         sum=0
         for i in range(len(students)):
                 if students[i]['candies']<5:
                         sum += students[i]['age']
         print("The sum is: ", sum)
-sum()
+
+sum_of_people_who_have_less()
