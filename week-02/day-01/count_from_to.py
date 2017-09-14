@@ -18,5 +18,5 @@ number2 = int(input("Write another number!"))
 if not number2 > number1:
     print("The second number should be bigger!")
 else:
-    for i in range(number1, number2 + 1):
+    for i in range(number1, number2):
         print(i)
