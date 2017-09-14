@@ -16,5 +16,19 @@
 girls = int(input("Write a number! "))
 boys = int(input("Write another! "))
 
-if girls == boys & (girls + boys) > 20 :
-    print("The party is excellent!")
+if girls == boys:
+    if (girls + boys) > 20:
+        print("The party is excellent!")
+
+if (girls > boys):
+    if (girls + boys) > 20:
+        print("Quite cool party!")
+
+if girls == 0:
+    print("Sausage party!")
+
+if girls > 0:
+    if (girls + boys) < 20:
+        print("Average party...")
+
+
