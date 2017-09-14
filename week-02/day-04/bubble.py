@@ -6,7 +6,7 @@ def bubblesort(list_input):
             if (list_input[k] < list_input[k - 1]):
                 swap(list_input, k, k - 1)
  
-def swap( list_input, x, y ):
+def swap(list_input, x, y):
     tmp = list_input[x]
     list_input[x] = list_input[y]
     list_input[y] = tmp
