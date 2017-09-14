@@ -14,5 +14,17 @@
 
 number = int(input("Write a number! "))
 
-for i in range(0, number):
-    print(" " * (number - i) + "*" * (i * 2 - 1))
+# for i in range(0, number + 1):
+#     print(" " * (number - i) + "*" * (i * 2 - 1))
+
+if number > 0:
+    for i in range(number):
+        for s in range(number, -3, -2, -1):
+            print(" ", end="")
+        for j in range(i * 2 -1):
+            print("*", end="")
+        print()
+    for i in range(number, -1, -1):
+        for j in range(i * 2 -1):
+            print("*", end="")
+        print()
