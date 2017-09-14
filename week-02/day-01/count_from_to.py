@@ -11,3 +11,12 @@
 # 3
 # 4
 # 5
+
+number1 = int(input("Write a number! "))
+number2 = int(input("Write another number!"))
+
+if not number2 > number1:
+    print("The second number should be bigger!")
+else:
+    for i in range(number1, number2 + 1):
+        print(i)
