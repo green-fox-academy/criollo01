@@ -5,17 +5,17 @@
 
 def copy_file(path_from, path_to):
     try:
-        file_open = open(path_from, "r")
-        text = file_open.read()
-        file_open.close()
+        file_from= open(path_from, "r")
+        text = file_from.read()
+        file_from.close()
     except IOError:
-        print("Unable to read file:", path_from)
+        print("Can't read file: ", path_from)
     
     try:
-        file_2_open = open(path_to, "a")
-        file_2_open.write(text)
-        file_2_open.close()
+        file_to = open(path_to, "a")
+        file_to.write(text)
+        file_to.close()
     except IOError:
-        print("Unable to write file:", path_to)
+        print("Can't write file: ", path_to)
     
 copy_file("file-name.txt", "my-file.txt")
