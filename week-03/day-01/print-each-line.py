@@ -12,3 +12,5 @@ def file_opener():
         print("unable to read file")
 
 file_opener()
+
+opener.close()
