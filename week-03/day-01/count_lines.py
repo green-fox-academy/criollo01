@@ -14,3 +14,5 @@ def number_of_lines(file_name):
         return 0
 
 number_of_lines(file_name)
+
+opener.close()
