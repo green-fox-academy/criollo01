@@ -12,3 +12,5 @@ def file_writer(filename):
         print("Unable to write file: ", file_name)
 
 file_writer(file_name)
+
+f.close()
