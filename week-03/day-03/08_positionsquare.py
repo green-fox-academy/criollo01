@@ -11,7 +11,7 @@ canvas = Canvas(root, width='300', height='300')
 canvas.pack()
 
 def position_square(x, y):
-    square = canvas.create_rectangle(x, y, x+50, y+50, fill = 'green', anchor = tk.center)
+    square = canvas.create_rectangle(x, y, x+50, y+50, fill = 'green')
 
 position_square(200, 230)
 position_square(30, 130)
