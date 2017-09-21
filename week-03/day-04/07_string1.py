@@ -9,4 +9,4 @@ def character_switcher(string):
     else: 
         return string[0] + character_switcher(string[1:])
 
-print(character_switcher("xxxxxkjkn"))
+print(character_switcher("xxhfrx"))
