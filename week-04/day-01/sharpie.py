@@ -13,6 +13,7 @@ class Sharpie(object):
 
     def use(self):
         self.ink_amount -= 9.5
+        return self.ink_amount
 
 yellow = Sharpie("yellow", "1.2", "ink_amount")
 black = Sharpie("black", "2.3", "ink_amount")
