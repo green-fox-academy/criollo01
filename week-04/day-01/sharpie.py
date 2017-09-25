@@ -6,7 +6,7 @@ We can use() the sharpie objects
 which decreases inkAmount '''
 
 class Sharpie(object):
-    def __init__(self):
+    def __init__(self, color, width, ink_amount):
         self.color = str(color)
         self.width = float(width)
         self.ink_amount = float(100)
@@ -14,9 +14,12 @@ class Sharpie(object):
     def use(self):
         self.ink_amount -= 9.5
 
-yellow = Sharpie()
-black = Sharpie()
-blue = Sharpie()
+yellow = Sharpie("yellow", "1.2", "ink_amount")
+black = Sharpie("black", "2.3", "ink_amount")
+blue = Sharpie("blue", "4", "ink_amount")
 
-
-    
+yellow.use()
+print(yellow.ink_amount)
+blue.use()
+blue.use()
+print(blue.ink_amount)
