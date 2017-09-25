@@ -1,26 +1,19 @@
-''' Create Sharpie class
-We should know about each sharpie their color (which should be a string), width (which will be a floating point number), ink_amount (another floating point number)
-When creating one, we need to specify the color and the width
-Every sharpie is created with a default 100 as ink_amount
-We can use() the sharpie objects
-which decreases inkAmount '''
-
 class Sharpie(object):
-    def __init__(self, color, width, ink_amount):
+    def __init__(self, color, width):
         self.color = str(color)
         self.width = float(width)
-        self.ink_amount = float(100)
+        self.ink_amount = 100
 
-    def use(self):
-        self.ink_amount -= 9.5
+    def use(self, amount):
+        self.ink_amount -= amount
         return self.ink_amount
 
-yellow = Sharpie("yellow", "1.2", "ink_amount")
-black = Sharpie("black", "2.3", "ink_amount")
-blue = Sharpie("blue", "4", "ink_amount")
+yellow = Sharpie("yellow", "1.2")
+black = Sharpie("black", "2.3")
+blue = Sharpie("blue", "4")
 
-yellow.use()
+yellow.use(50)
 print(yellow.ink_amount)
-blue.use()
-blue.use()
+blue.use(20)
+blue.use(2)
 print(blue.ink_amount)
