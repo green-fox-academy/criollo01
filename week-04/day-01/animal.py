@@ -7,16 +7,32 @@ Every animal can drink() which decreases their thirst by one
 Every animal can play() which increases both by one '''
 
 class Animals(object):
-    def __init__(self, hunger, thirst):
+    def __init__(self):
         self.hunger = int(50)
         self.thirst = int(50)
 
     def eat(self):
         self.hunger -= 1
+        return self.hunger
     
     def drink(self):
         self.thirst -= 1
+        return self.thirst
 
     def play(self):
         self.hunger += 1
-        self.hunger += 1
+        self.thirst += 1
+        return self.hunger
+        return self.thirst
+
+lion = Animals()
+tiger = Animals()
+zebra = Animals()
+
+lion.eat()
+lion.play()
+zebra.drink()
+tiger.play()
+
+print(lion.thirst)
+print(zebra.thirst)
