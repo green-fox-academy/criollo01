@@ -13,12 +13,17 @@ class Station(object):
     def __init__(self):
         self.gas_amount = int(100)
     
-    def refill(car):
+    def refill(self, car):
         self.gas_amount -= car.capacity
         return self.gas_amount
 
 class Car(object):
-    def __init__(self, gas_amount, capacity):
+    def __init__(self):
         self.gas_amount = int(0)
         self.capacity = int(100)
     
+
+Kia = Car()
+Omv = Station()
+
+print(Omv.refill(Kia))
