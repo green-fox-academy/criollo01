@@ -10,4 +10,7 @@ post_it_1 = PostIt("yellow", "Washing the dishes", "black")
 post_it_2 = PostIt("blue", "Shopping", "white")
 post_it_3 = PostIt("white", "Cleaning", "red")
 
-print(post_it_1.background_color)
+print(post_it_1.background_color, post_it_1.text, post_it_1.text_color)
+print(post_it_2.background_color, post_it_2.text, post_it_2.text_color)
+print(post_it_3.background_color, post_it_3.text, post_it_3.text_color)
+
