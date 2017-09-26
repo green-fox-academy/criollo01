@@ -22,13 +22,13 @@ class Garden(object):
              all_plants += str(self.plants[i]) + "\n"
         return all_plants
 
-class Plants(object):
+class AllPlants(object):
 
     def __init__(self, color):
         self.color = color
         self.water_amount = 0
 
-class Tree(Plants):
+class Tree(AllPlants):
 
     def needs_water(self):
         if self.water_amount < 10:
@@ -42,7 +42,7 @@ class Tree(Plants):
     def __repr__(self):
         return "The {} tree {}.".format(self.color, self.needs_water())
 
-class Flower(Plants):
+class Flower(AllPlants):
 
     def needs_water(self):
         if self.water_amount < 5:
