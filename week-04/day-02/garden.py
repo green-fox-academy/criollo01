@@ -31,10 +31,7 @@ class AllPlants(object):
 class Tree(AllPlants):
 
     def needs_water(self):
-        if self.water_amount < 10:
-            return "needs water"
-        else:
-            return "doesn't need water"
+        return "needs water" if self.water_amount < 10 else "doesn't need water"
 
     def watered(self, amount):
         self.water_amount += amount * 0.4
@@ -45,10 +42,7 @@ class Tree(AllPlants):
 class Flower(AllPlants):
 
     def needs_water(self):
-        if self.water_amount < 5:
-            return "needs water"
-        else:
-            return "doesn't need water"
+        return "needs water" if self.water_amount < 5 else "doesn't need water"
 
     def watered(self, amount):
         self.water_amount += amount * 0.75
