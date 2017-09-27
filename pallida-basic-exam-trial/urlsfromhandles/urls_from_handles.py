@@ -8,4 +8,11 @@
 # output: ["https://github.com/greenfox-academy/ghhandle1", "https://github.com/greenfox-academy/ghhandle2"]
 
 names = ["ghhandle1", "ghhandle2"]
+url = "https://github.com/greenfox-academy/"
+
+def urls_from_handles(names):
+    for i in range(len(names)):
+        names[i] = url + names[i]
+    return names
+
 print(urls_from_handles(names))
