@@ -8,7 +8,7 @@ root = Tk()
 canvas = Canvas(root, width='300', height='300')
 canvas.pack()
 
-red_line = canvas.create_line(0, 150, 300, 150, fill = 'red')
-green_line = canvas.create_line(150, 0, 150, 300, fill = 'green')
+red_rectangle = canvas.create_rectangle(0, 150, 300, 150, fill = 'red')
+
 
 root.mainloop()

@@ -3,8 +3,6 @@ import random
 
 root = Tk()
 
-
-
 canvas = Canvas(root, width='700', height='700', bg = 'black')
 canvas.pack()
 
@@ -20,5 +18,7 @@ while i < 350:
     envelope(350, i, 350+i, 350)
     envelope(350-i, 350, 350, 700-i)
     envelope(350+i, 350, 350, 700-i)
+
+# envelope(350, i, 350-i, 350)
 
 root.mainloop()
