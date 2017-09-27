@@ -28,7 +28,6 @@ class Dice(object):
         else:
             self.roll()
 
-
 dice = Dice()
 print(dice.get_current())
 dice.roll()
