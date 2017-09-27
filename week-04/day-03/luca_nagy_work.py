@@ -20,3 +20,15 @@ class Anagram(object):
         compare_to = list(list2)
         if compare.sort() == compare_to.sort():
             return True 
+
+
+class CountLetters(object):
+
+    def count_letters(self, word):
+        letter_number = {}
+        for letter in word:
+            if letter in letter_number:
+                letter_number[letter] += 1
+            else:
+                letter_number[letter] = 1
+        return letter_number
