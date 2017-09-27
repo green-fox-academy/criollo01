@@ -32,3 +32,11 @@ class CountLetters(object):
             else:
                 letter_number[letter] = 1
         return letter_number
+
+class Fibonacci(object):
+
+    def fibonacci(self, n):
+        if n < 2:
+            return n
+        else:
+            return self.fibonacci(n - 1) + self.fibonacci(n - 2)
