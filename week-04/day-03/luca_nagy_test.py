@@ -1,5 +1,5 @@
 import unittest
-from luca_nagy_work import Apple, Sum, Anagram 
+from luca_nagy_work import Apple, Sum, Anagram, CountLetters
 
 class AppleTestCases(unittest.TestCase):
 
@@ -34,6 +34,25 @@ class AnagramTestCase(unittest.TestCase):
     def test_anagram(self):
         test_anagram = Anagram()
         self.assertTrue(test_anagram)
+
+
+class CountLettersTestCase(unittest.TestCase):
+
+    def test_if_empty(self):
+        test_word = CountLetters()
+        self.assertEqual(test_word.count_letters(""), {})
+    
+    def test_if_one(self):
+        test_word = CountLetters()
+        self.assertEqual(test_word.count_letters("kutya")["k"] , 1)
+
+    def test_if_two_same(self):
+        test_word = CountLetters()
+        self.assertEqual(test_word.count_letters("hamar")["a"] , 2)
+    
+
+
+
 
 
 if __name__ == '__main__':
