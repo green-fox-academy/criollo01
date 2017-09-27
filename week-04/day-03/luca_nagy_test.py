@@ -49,7 +49,12 @@ class CountLettersTestCase(unittest.TestCase):
     def test_if_two_same(self):
         test_word = CountLetters()
         self.assertEqual(test_word.count_letters("hamar")["a"] , 2)
-
+    
+    def test_if_two_different(self):
+        pass
+        # test_word = CountLetters()
+        # self.assertEqual(test_word.count_letters("haha"))
+        
 
 class FibonacciTestCases(unittest.TestCase):
 
