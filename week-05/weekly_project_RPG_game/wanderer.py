@@ -25,7 +25,7 @@ class Tile():
 class Hero():
 
     def __init__(self):
-        self.hero = PhotoImage('file = assets/hero-down.png')
+        self.hero = PhotoImage(file = 'assets/hero-down.png')
         self.draw_hero()
 
     def draw_hero(self):
