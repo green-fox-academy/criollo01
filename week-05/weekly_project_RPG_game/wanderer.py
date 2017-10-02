@@ -2,13 +2,9 @@ from tkinter import *
 from map_drawer import MapTiles
 
 root = Tk()
-map_drawer = MapTiles()
-
-hero = PhotoImage(file = 'assets/hero-down.png')
-
-root.configure(background ='black')
 canvas = Canvas(root, width = 720, height = 720, bg="white", bd=0)
-canvas.pack()
+
+map_drawer = MapTiles()
 
 class Tile():
 
@@ -35,8 +31,8 @@ class Entity():
 class GameLogic():
     pass        
 
-canvas.pack()
 map_draw = Tile()
-canvas.focus_set()
 
+canvas.pack()
+canvas.focus_set()
 root.mainloop()
