@@ -22,7 +22,7 @@ class Tile():
                     canvas.create_image(x*72, y*72, anchor = NW, image = self.wall)
 
 
-class Hero():
+class Hero(Entity):
 
     def __init__(self):
         self.hero = PhotoImage(file = 'assets/hero-down.png')
@@ -33,13 +33,16 @@ class Hero():
 
 
 class Entity():
-    pass
+
+    def __init__(self):
+        self.x = 0
+        self.y = 0
 
 class View():
     pass
 
 class GameLogic():
-    pass        
+    pass
 
 canvas.pack()
 
