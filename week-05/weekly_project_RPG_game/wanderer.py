@@ -22,17 +22,29 @@ class Tile():
                     canvas.create_image(x*72, y*72, anchor = NW, image = self.wall)
 
 
-class View():
-    pass
+class Hero():
+
+    def __init__(self):
+        self.hero = PhotoImage('file = assets/hero-down.png')
+        self.draw_hero()
+
+    def draw_hero(self):
+        canvas.create_image(0, 0, anchor = NW, image = self.hero)
+
 
 class Entity():
+    pass
+
+class View():
     pass
 
 class GameLogic():
     pass        
 
-map_draw = Tile()
-
 canvas.pack()
+
+map_draw = Tile()
+entity = Hero()
+
 canvas.focus_set()
 root.mainloop()
