@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    width: 680px;
+    height: 55px;
+    background: #c000ff;
+    align-items: center;    
+    justify-content: flex-start;
+    margin: auto;    
+}
+
+.nav {
+    height: 25px;
+    background: #00eeff;
+    margin-left: 10px;
+}
+
+.first {
+    width: 95px;
+}
+
+.second {
+    width: 75px;
+}
+
+.third {
+    width: 85px;
+}
+
+.container {
+    display: flex;
+    width: 680px;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+}
+
+.main {
+    background: #FFD62A;
+    flex-grow: 2;
+}
+
+.side {
+    background: #51D400;
+    flex-grow: 1;
+}
