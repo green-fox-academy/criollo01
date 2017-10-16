@@ -10,6 +10,7 @@
     background: #c000ff;
     align-items: center;    
     justify-content: flex-start;
+    position: fixed;
 }
 
 .nav {
@@ -36,6 +37,7 @@
     height: 435px;
     background-color: white;
     margin: auto;
+    padding-top: 75px;    
 }
 
 .main {
