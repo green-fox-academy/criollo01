@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    background-color: #313841;
+    width: 700px;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.trash_white {
+    color: white;
+    background-color: #1C242B;
+    margin-top: 85px;
+}
+
+.trash_red {
+    color: red;
+    background-color: #1C242B;
+}
+
+.checkmark {
+    color: green;
+    background-color: #1C242B;
+    margin-bottom: 85px;
+}
