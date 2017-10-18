@@ -25,8 +25,12 @@
     flex-grow: 1;    
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .container {
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .item {
+        width: 100%;
     }
 }
