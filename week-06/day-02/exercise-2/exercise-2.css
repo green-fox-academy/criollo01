@@ -4,23 +4,22 @@
     width: 600px;
 }
 
-.green {
+.green, .yellow, .purple {
     height: 100px;
     width: 100px;
+}
+
+.green {
     background-color: green;
     flex-grow: 1;
 }
 
 .yellow {
-    height: 100px;
-    width: 100px;
     background-color: yellow;
     flex-grow: 2;    
 }
 
 .purple {
-    height: 100px;
-    width: 100px;
     background-color: purple;
     flex-grow: 1;    
 }
