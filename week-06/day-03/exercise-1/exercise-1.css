@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    height: 200px;    
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 180px;
+    background: #B02AFF;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.left, .right {
+    background: #FFD62A;
+}
+
+.middle {
+    background: #51D400;
+}
+
+
+
