@@ -61,5 +61,4 @@ console.log((j % 3 === 0) || (j % 5 === 0));
 let k = 'Apple';
 // fill the k variable with its content 4 times
 
-k = 'Apple'.repeat(4);
-console.log(k);
+k = 'Apple'.repeat(4); 
