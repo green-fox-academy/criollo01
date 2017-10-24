@@ -4,5 +4,5 @@
 // "I won't cheat on the exam!"
 
 for (let i = 1; i <= 100; i += 1) {
-    console.log("I won't cheat on the exam!");
+    console.log('I won\'t cheat on the exam!');
 }
