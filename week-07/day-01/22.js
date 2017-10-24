@@ -18,9 +18,9 @@ let out2 = '';
 if (10 < b < 20) {
     out2 = 'Sweet!';
 } else if (b < 10){
-    out2 = 'More!'
+    out2 = 'More!';
 } else {
-    out2 = 'Less!'
+    out2 = 'Less!';
 }
 console.log(out2);
 
@@ -54,11 +54,11 @@ let out3 = '';
 // otherwise set out3 to "Run Forest Run!"
 
 if (d % 4 === 0 && time <= 200) {
-    out3 = 'check'
+    out3 = 'check';
 } else if (time > 200) {
-    out3 = 'time out'
+    out3 = 'time out';
 } else {
-    out3 = 'run forest run'
+    out3 = 'run forest run';
 }
 
 console.log(out3);
