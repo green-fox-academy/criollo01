@@ -7,5 +7,4 @@ function printer(...string) {
     console.log(string.join(' '));
 }
 
-
 printer('hello', 'blabla')
