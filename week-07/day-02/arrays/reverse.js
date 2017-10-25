@@ -9,3 +9,8 @@
 let aj = [3, 4, 5, 6, 7];
 aj.reverse();
 console.log(aj)
+
+let ajk = [3, 4, 5, 6, 7];
+for(let i = ajk.length + 1; i >= 0; i--){
+    console.log(ajk[i])
+}
