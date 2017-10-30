@@ -32,11 +32,11 @@ var ferrari = {
 };
 
 function refuel(liters) {
-  this.fuel += liters
+  this.fuel += liters;
 };
 
 let ferrariFuel = refuel.bind(ferrari);
-ferrariFuel(52)
+ferrariFuel(52);
 console.log(ferrari.fuel);
 
 // 3rd
