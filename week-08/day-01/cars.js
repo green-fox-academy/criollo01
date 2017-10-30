@@ -59,8 +59,6 @@ let tesla = {
     }
 }
 
-
-
 tesla.ride(36);
 console.log(tesla.kms);
 console.log(tesla.battery);
