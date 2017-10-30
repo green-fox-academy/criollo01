@@ -16,21 +16,21 @@ const car = {
     petrolLevel : 0,
     petrolCapacity : 50,
     refill : function (amount) {
-        if (this.petrolCapacity - this.petrolLevel >= amount) {
-            this.petrolLevel += amount;
-            return amount;
-        } else {
+        if (this.petrolLevel + amount > this.petrolCapacity) {
+            let usedFuel = this.petrolCapacity - this.petrolLevel; 
             this.petrolLevel = this.petrolCapacity;
+            return usedFuel;
+        } else {
+            this.petrolLevel + amount;
+            return amount;
         }
-        return amount;
     }
 }
 
 const station = {
     petrolStorage : 3000,
     provide : function (car) {
-        let usedFuel = car.refill (this.petrolStorage);
-        this.petrolStorage -= usedFuel;
+        this.petrolStorage -= car.refill(this.petrolStorage);        
     }
 }
 
