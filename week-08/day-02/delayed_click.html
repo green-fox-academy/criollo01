@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delayed click</title>
+</head>
+<body>
+    <button>Click me</button>
+    <p></p>
+
+    <script>
+        var button = document.querySelector('button');
+        var text = document.querySelector('p');
+
+        button.addEventListener('click', OnClick);
+
+        function OnClick() {
+            setTimeout(function() { text.textContent = '2 seconds ellapsed' }, 2000);
+        }
+    </script>
+</body>
+</html>
