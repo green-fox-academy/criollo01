@@ -16,3 +16,16 @@ const threeTimes = multiplier(3);
 console.log(threeTimes(5)); // should log 15
 console.log(threeTimes(100)); // should log 300
 
+function greet(greeting) {
+    return function(name) {
+        console.log(greeting, name)
+    }
+}
+var helloGreeter = greet('hello')
+helloGreeter('Luca')
+helloGreeter('István')
+greet('hello')('István')
+
+function multiply (x, y) {
+    return x * y
+}
