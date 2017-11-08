@@ -1,7 +1,10 @@
 let express = require('express');
 let app = express();
+let bodyParser = require('body-parser');
+let parser = bodyParser.urlencoded({extended :false});
 
 app.use('/assets', express.static('assets'));
+app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
@@ -10,7 +13,7 @@ app.get('/', function(req, res) {
 app.get('/doubling', function(req, res){
     if (req.query.input) {
         res.json({
-            'received' : req.query.input, 'result' : req.query.input*2
+            "received" : req.query.input, "result" : req.query.input*2
         });
     } else {
         res.json({
@@ -41,6 +44,28 @@ app.get('/appendA/:input', function(req, res) {
     })
 });
 
-
+app.post('/dountil/:item', parser, function(req, res) {
+    if (req.params.item == "sum") {
+        let sumOf = 0;
+        let number = req.body.until;
+        while (number > 0){
+            sumOf += number;
+            number--;
+        } 
+        res.json({"result" : sumOf});
+    } else if (req.params.input === "factor") {
+        let num = req.body.until;
+        let fact = 1;
+        while (num > 0){
+            fact *= num;
+            num--;
+        }
+        res.json({"result" : fact});
+    } else if (req.params.input === '') {
+        res.json({
+            "error" : "Please provide a number!"            
+        });
+    }
+});
 
 app.listen(8080);
