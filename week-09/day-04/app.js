@@ -23,7 +23,12 @@ conn.connect(function(err){
     }
 });
 
-
+app.get('/title', function(req, res) {
+    conn.query("SELECT book_name FROM book_mast;", function(err, rows){
+        console.log("Data received from Db:\n");
+        console.log(rows);
+    });
+})
 
 app.listen(8080);
 
