@@ -19,8 +19,12 @@ conn.connect(function(err){
     if(err){
         console.log("Error connecting to Db");
     } else {
-        console.log("Mysql connection established");
+        console.log("Connection established");
     }
+});
+
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/title', function(req, res) {
