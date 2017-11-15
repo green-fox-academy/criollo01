@@ -36,6 +36,18 @@ body {
     overflow-y: auto;    
 }
 
+.fa-plus, .fa-star {
+    float: right;
+    margin-right: 10px;
+}
+
+.fa-times {
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    transform: rotate(45deg);    
+}
+
 .current {
     background-color: #F5F5F5;
     grid-area: current;
