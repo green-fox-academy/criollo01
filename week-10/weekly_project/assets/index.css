@@ -66,10 +66,6 @@ body {
     padding-top: 15px;
 }
 
-nav {
-    display: inline;
-}
-
 .current_h1 {
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
