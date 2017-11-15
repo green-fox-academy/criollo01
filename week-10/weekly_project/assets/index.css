@@ -9,8 +9,8 @@ body {
     padding-top: 15px;
     justify-content: center;
     display: grid;
-    grid-template-columns: 240px 100px 180px 180px;
-    grid-template-rows: 100px 300px 50px;
+    grid-template-columns: 220px 120px 180px 180px;
+    grid-template-rows: 120px 300px 50px;
     grid-template-areas: 'logo album current current'
                          'playlist playlist tracks tracks'
                          'control control control control'
@@ -21,6 +21,17 @@ body {
     background-repeat: no-repeat;
     background-color: #F5F5F5;
     grid-area: logo;
+}
+
+.logo p {
+    margin-top: 90px;
+    margin-left: 17px;
+    font-family: 'Inconsolata', monospace;    
+}
+.logo .fa-times{
+    margin: 0px;
+    padding-top: 90px;
+    padding-right: 10px;
 }
 
 .album {
@@ -45,7 +56,7 @@ body {
     float: right;
     margin-top: 15px;
     margin-right: 10px;
-    transform: rotate(45deg);    
+    transform: rotate(45deg);
 }
 
 .current {
