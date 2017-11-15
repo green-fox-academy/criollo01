@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/d626de491e.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">    
     <title>foxplayer</title>
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <audio src="assets/Oberhofer-Sea_of_Dreams.mp3" controls></audio>
-    <div id="player">
-        <div id="buttons">
-            <button class="rewind button"></button>
-            <button class="play button"></button>
-            <button class="forward button"></button>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="album"></div>
+        <div class="playlist">
+            <li class="list">All tracks</li>
+            <li class="list">Favorites</li>
+            <li class="list">Relaxing music for programming<i class="fa fa-times icon" aria-hidden="true"></i></li>
+            <li class="list">Party<i class="fa fa-times icon" aria-hidden="true"></i></li>
         </div>
-        <div id="time">
-            <div id="playhead"></div>
+        <div class="current">
+            <h1 class="current_h1">Album title</h1>
+            <h2 class="current_h2">Artist name</h2>
+            <nav id="top_right_right">
+                <i class="fa fa-plus gray_button icon" aria-hidden="true"></i>
+                <i class="fa fa-star gray_button icon" aria-hidden="true"></i>
+            </nav>
         </div>
-        <div id="volume_control">
-            <img class="sound">
-            <input type="range">
+        <div class="tracks">
+            <li class="song"><span class="index">1</span>First track<span class="song_length">3:30</span></li>        
+            <li class="song"><span class="index">1</span>Second track<span class="song_length">3:30</span></li>        
+            <li class="song"><span class="index">1</span>Third track<span class="song_length">3:30</span></li>        
+            <li class="song"><span class="index">1</span>music<span class="song_length">3:30</span></li>        
+            <li class="song"><span class="index">1</span>music<span class="song_length">3:30</span></li>        
+            <li class="song"><span class="index">1</span>music<span class="song_length">3:30</span></li>            
+            <li class="song"><span class="index">1</span>music<span class="song_length">3:30</span></li>        
+            <li class="song"><span class="index">1</span>music<span class="song_length">3:30</span></li>        
+            <li class="song"><span class="index">1</span>music<span class="song_length">3:30</span></li>            
         </div>
+        <audio src="assets/Oberhofer-Sea_of_Dreams.mp3" controls></audio>
+        <script src="app.js"></script>
     </div>
-    <script src="assets/app.js"></script>
-</body>
+    </body>
 </html>
