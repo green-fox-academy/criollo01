@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.container {
+    background-color: #333;
+    margin: auto;
+    padding-top: 15px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 240px 100px 180px 180px;
+    grid-template-rows: 100px 300px 50px;
+    grid-template-areas: 'logo album current current'
+                         'playlist playlist tracks tracks'
+                         'control control control control'
+}
+
+.logo {
+    background: url(assets/foxplayer.png);
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    grid-area: logo;
+}
+
+.album {
+    grid-area: album;
+    background-image: url("assets/music-placeholder.png");
+    background-size: contain;
+}
+
+.playlist {
+    background-color: #F5F5F5;
+    grid-area: playlist;
+    border-right: 2px solid #DBDBDB; 
+    overflow-y: auto;    
+}
+
+.current {
+    background-color: #F5F5F5;
+    grid-area: current;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+nav {
+    display: inline;
+}
+
+.current_h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    margin: 0px;    
+    color: black;
+    margin-top: 15px;
+}
+
+.current_h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;    
+    margin: 0px;
+    color: grey;
+}
+
+.tracks {
+    grid-area: tracks;
+    display: flex;
+    flex-flow: column;
+}
+
+.song_length {
+    margin-right: 0.5rem;
+    float: right;
+}
+
+.index {
+    margin-right: 0.5rem;
+    color: rgb(105, 103, 103);
+    font-size: 12px;
+}
+
+audio {
+    width: 700px;
+    display: block;
+}
+
+
+.tracks {
+    overflow-y: auto;
+    background-color: #F5F5F5;
+}
+
+li {
+    list-style: none;
+    line-height: 40px;
+    padding-left: 1rem;
+    font-size: 0.7rem;
+    color: black;
+    cursor: pointer;
+}
+
+.song:nth-of-type(odd), .list:nth-of-type(odd) {
+    background-color: #EAEAEA;
+}
+
+.song:hover, .list:hover {
+    background-color: #ABE7E5;
+}
