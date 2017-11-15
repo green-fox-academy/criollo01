@@ -7,7 +7,7 @@
     <script src="https://use.fontawesome.com/d626de491e.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">    
     <title>foxplayer</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="assets/index.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -22,10 +22,10 @@
         <div class="current">
             <h1 class="current_h1">Album title</h1>
             <h2 class="current_h2">Artist name</h2>
-            <nav id="top_right_right">
-                <i class="fa fa-plus gray_button icon" aria-hidden="true"></i>
-                <i class="fa fa-star gray_button icon" aria-hidden="true"></i>
-            </nav>
+            <div id="top_right_right">
+                <div class="fa fa-plus gray_button icon" aria-hidden="true"></div>
+                <div class="fa fa-star gray_button icon" aria-hidden="true"></div>
+            </div>
         </div>
         <div class="tracks">
             <li class="song"><span class="index">1</span>First track<span class="song_length">3:30</span></li>        
@@ -39,7 +39,7 @@
             <li class="song"><span class="index">1</span>music<span class="song_length">3:30</span></li>            
         </div>
         <audio src="assets/Oberhofer-Sea_of_Dreams.mp3" controls></audio>
-        <script src="app.js"></script>
     </div>
+    <script src="player.js"></script>    
     </body>
 </html>
