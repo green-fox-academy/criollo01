@@ -1,0 +1,28 @@
+body {
+  margin: 5px;
+  border: 2px dotted #F58E2A;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+}
+
+.container {
+  display: flex;
+}
+
+img {
+  margin: 35px;
+}
+
+h1 {
+  background: -webkit-linear-gradient(rgb(252, 255, 49), rgb(238, 36, 36));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 35px;
+  text-align: center;    
+  border: 3px #F58E2A dotted;
+  border-radius: 10px;
+  width: 700px;
+  margin: auto;
+  margin-top: 25px;
+}
