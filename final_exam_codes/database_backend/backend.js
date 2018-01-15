@@ -1,10 +1,8 @@
-'use strict'
+'use strict';
 
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
-
-app.use('/assets', express.static('./assets'));
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -28,7 +26,7 @@ app.get('/subaru', function(req, res) {
       console.log('Error in database query.');
     } else {
       res.send(data);
-    }
+    };
   });
 });
 

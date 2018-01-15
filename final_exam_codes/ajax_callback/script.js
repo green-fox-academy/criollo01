@@ -1,15 +1,16 @@
 'use strict'
 
-function getGif (callback) {
-  let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://api.giphy.com/v1/gifs/search?api_key=mAjsye6MxUqXDSoBF5y8iAMbsA8TMBEu&q=lavalamp&limit=10&offset=0&rating=G&lang=en');
+let xhr = new XMLHttpRequest();
+let url = 'https://api.giphy.com/v1/gifs/search?api_key=mAjsye6MxUqXDSoBF5y8iAMbsA8TMBEu&q=lavalamp&limit=10&offset=0&rating=G&lang=en'
+
+function ajaxRequest (callback) {
+  xhr.open('GET', url);
+  xhr.send();
   xhr.onreadystatechange = function() {
-    if (xhr.readyState == 4) {
-      let Gifs = JSON.parse(xhr.responseText);
-      callback(Gifs);
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      callback(JSON.parse(xhr.responseText));
     };
   };
-  xhr.send();
 };
 
 function showStillGif(gifData) {
@@ -29,5 +30,5 @@ function gifMovement(image, gif){
 };
 
 window.onload = function() {
-    getGif(showStillGif);
+    ajaxRequest(showStillGif);
 };
