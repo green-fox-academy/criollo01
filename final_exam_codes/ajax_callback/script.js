@@ -3,7 +3,7 @@
 let xhr = new XMLHttpRequest();
 let url = 'https://api.giphy.com/v1/gifs/search?api_key=mAjsye6MxUqXDSoBF5y8iAMbsA8TMBEu&q=lavalamp&limit=10&offset=0&rating=G&lang=en'
 
-function ajaxRequest (callback) {
+function ajax(callback) {
   xhr.open('GET', url);
   xhr.send();
   xhr.onreadystatechange = function() {
@@ -30,5 +30,5 @@ function gifMovement(image, gif){
 };
 
 window.onload = function() {
-    ajaxRequest(showStillGif);
+    ajax(showStillGif);
 };
