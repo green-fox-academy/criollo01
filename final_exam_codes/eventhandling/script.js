@@ -1,10 +1,7 @@
 'use strict';
 
-(function eventHandling() {
-  let button = document.querySelector('button');
-  let text = document.querySelector('p');
+let button = document.querySelector('button');
 
-  button.addEventListener('click', () => {
-    text.innerText = 'That was a nice click!';
-  })
-})();
+button.addEventListener('click', () => {
+  alert('That was a nice click!');
+});
